@@ -175,6 +175,7 @@ int main(void)
   MX_USART2_UART_Init();
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
+    // note: qspi freq is set a little too low
     /* initialize EasyLogger */
     elog_init();
     /* set EasyLogger log format */
