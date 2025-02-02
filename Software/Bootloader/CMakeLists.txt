@@ -51,7 +51,7 @@ endif ()
 
 include_directories(Core/Inc Drivers/STM32H7xx_HAL_Driver/Inc Drivers/STM32H7xx_HAL_Driver/Inc/Legacy Drivers/CMSIS/Device/ST/STM32H7xx/Include Drivers/CMSIS/Include Core/SFUD/sfud/inc Core/EasyLogger/easylogger/inc Core/EasyLogger/easylogger/plugins/file Core/EasyLogger/easylogger/plugins/flash)
 
-add_definitions(-DDEBUG -DUSE_PWR_LDO_SUPPLY -DUSE_HAL_DRIVER -DSTM32H730xx)
+add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32H730xx -DUSE_PWR_EXTERNAL_SOURCE_SUPPLY)
 
 file(GLOB_RECURSE SOURCES "Core/Startup/*.*" "Core/EasyLogger/easylogger/port/*.*" "Core/EasyLogger/easylogger/src/*.*" "Core/SFUD/sfud/src/*.*" "Core/SFUD/sfud/port/*.*" "Core/*.*" "Core/Src/*.*" "Drivers/*.*")
 
